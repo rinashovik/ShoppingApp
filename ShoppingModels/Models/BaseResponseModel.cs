@@ -17,4 +17,8 @@ namespace ShoppingModels.Models
         public object data { get; set; }
 
     }
+
+
+
+
 }

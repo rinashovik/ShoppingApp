@@ -4,6 +4,8 @@ using ShoppingBL.Services;
 using Shoppingdatabase.data;
 
 
+
+Console.WriteLine("****************");
 var builder = WebApplication.CreateBuilder(args);
 
 // Add service defaults & Aspire client integrations.
