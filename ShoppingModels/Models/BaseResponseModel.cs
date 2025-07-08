@@ -14,7 +14,7 @@ namespace ShoppingModels.Models
 
         public string ErrorMessage { get; set; }
 
-        public object data { get; set; }
+        public object Data { get; set; }
 
     }
 
