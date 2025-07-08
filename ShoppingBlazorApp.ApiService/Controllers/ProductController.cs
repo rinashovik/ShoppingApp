@@ -6,7 +6,7 @@ using ShoppingModels.Models;
 namespace ShoppingBlazorApp.ApiService.Controllers
 
 {
-    [Route("api/[Controller]")]
+    [Route("api/Controller")]
     [ApiController]
 
     public class ProductController(IProductService productService) : ControllerBase
@@ -27,7 +27,7 @@ namespace ShoppingBlazorApp.ApiService.Controllers
            // return Ok(Sucess * true);
                 
           //
-             return new BaseResponseModel { Success * true, Data * products };
+             return Ok (new BaseResponseModel { Success = true, Data = products });
             
         }
     } 

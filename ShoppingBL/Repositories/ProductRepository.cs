@@ -9,14 +9,15 @@ namespace ShoppingBL.Repositories
     {
 
         Task<List<ProductModel>> GetProducts();
+         
     }
-    internal class ProductRepository(AppDbContext dtContext): IProductRepository
+    public class ProductRepository(AppDbContext dbContext): IProductRepository
     {
 
 
         public Task<List<ProductModel>> GetProducts()
         {
-            return DbContext.Products.ToListAsync();
+            return dbContext.Products.ToListAsync();
         }
     }
 }
